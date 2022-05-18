@@ -1,71 +1,86 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  height: 65px; 
-  background: linear-gradient(90deg, #5b6b8b 1.18%, #2027a4 100%);
-  color: white;
-  padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg, #5b6b8b 1.18%, #2027a4 100%);
+    color: white;
+    padding: 20px;
 }
 
 .header--img {
-  height: 100%;
-  position: relative;
-  left: 50px;
+    height: 100%;
+    position: relative;
+    left: 50px;
 }
 
 .header--project {
-  margin-left: auto;
-  position: relative;
-  right: 50px;
-  font-size: 20px;
-  font-weight: 500;
+    margin-left: auto;
+    position: relative;
+    right: 50px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-
 main {
-  padding: 36px;
+    padding: 36px;
 }
 
 .form {
-  display: grid;
-  grid-template: 40px 40px / 1fr 1fr;
-  gap: 17px;
-  margin-bottom: 17px;
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+    margin-bottom: 17px;
 }
 
 .form--input {
-  font-family: "Karla", sans-serif;
-  border-radius: 5px;
-  border: 1px solid #D5D4D8;
-  text-indent: 5px;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #d5d4d8;
+    text-indent: 5px;
 }
-
-
 
 .form--button {
-  grid-column: 1 / -1;
-  font-family: "Karla", sans-serif;
-  font-size:25px;
-  width: 100vw;
-  background: linear-gradient(90.41deg,  #5b6b8b 1.18%, #2027a4 100%);
-  color: white;
-  border: none;
-  cursor: pointer;
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
+    font-size: 25px;
+    width: 100vw;
+    background: linear-gradient(90.41deg, #5b6b8b 1.18%, #2027a4 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
+
+.save--button {
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
+    font-size: 25px;
+    width: 100vw;
+    background: linear-gradient(90deg, #5b6b8b 1.18%, #2027a4 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
 
 /* .memeImg {
   
@@ -78,44 +93,78 @@ main {
 } */
 
 .meme {
-  position: relative;
+    position: relative;
+}
+
+.saved-meme {
+    position: relative;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.meme-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .meme--image {
-  max-width: 100%;
-  border-radius: 3px;
-  margin-left:550px;
+    max-width: 50%;
+    /* border-radius: 30px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .meme--text {
-  position: absolute;
-  width: 80%;
-  text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 15px 0;
-  padding: 0 5px;
-  font-family: impact, sans-serif;
-  font-size: 2em;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: 1px;
-  text-shadow:
-      2px 2px 0 #000,
-      -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000,
-      0 2px 0 #000,
-      2px 0 0 #000,
-      0 -2px 0 #000,
-      -2px 0 0 #000,
-      2px 2px 5px #000;
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
 }
 
 .bottom {
-  bottom: 0;
+    bottom: 20%;
 }
 
 .top {
-  top: 0;
+    top: 2%;
+}
+
+.meme-buttons {
+    position: relative;
+    margin-left: 40%;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.meme-buttons>button {
+    position: relative;
+    width: 20%;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+.edit-button {
+    background-color: lightblue;
+    border-radius: 0 0 0 2rem;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border-radius: 0 0 2rem 0;
 }
