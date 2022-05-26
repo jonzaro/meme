@@ -52,8 +52,8 @@ function App(props) {
     <div className="App">
       <Header />
       <MemeMaker submit={addNewItem}/>
-      <h2>Created Memes</h2>
-      <hr/>
+      <hr/><br></br>
+      <h2 className="meme--list--title">Created Memes</h2>
       {list}
     </div>
   );

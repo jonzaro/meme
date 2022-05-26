@@ -29,21 +29,25 @@ function MemeEdits(props) {
     const handleSubmit = (e) => { 
         e.preventDefault()
         props.updateMemeItem(props.id, meme)
-        console.log("is this edit working?")
         toggleShowForm()
     }
 
     return (
-        <div>
+        <div className="meme--list">
+            
             {showForm ? 
-                <form onSubmit={handleSubmit}>
+                <form className="edit--form" onSubmit={handleSubmit}>
                     <input 
                         name="topText"
+                        placeholder="Top Text"
+                        className="edit--form--input"
                         value={meme.topText}
                         onChange={handleChange}
                     />
                     <input 
                         name="bottomText"
+                        placeholder="Bottom Text"
+                        className="edit--form--input"
                         value={meme.bottomText}
                         onChange={handleChange}
                     />
@@ -60,6 +64,7 @@ function MemeEdits(props) {
             </>
             }
             <button onClick={toggleShowForm}>{showForm ? "Close" : "Edit"}</button>
+            <br></br>
             <button onClick={()=> {props.deleteMemeImage(props.id)}}>Delete</button>
         </div>
     );

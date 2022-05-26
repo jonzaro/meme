@@ -14,7 +14,6 @@ function Meme(props) {
   const [allMemes, setAllMemes] = React.useState([]);
 
   React.useEffect(function () {
-    console.log("Effect Ran");
     axios
       .get("https://api.imgflip.com/get_memes")
       .then((response) => {
@@ -56,7 +55,7 @@ function Meme(props) {
   return (
     <main>
       <button className="form--button" onClick={getMemeImage}>
-          Get a new meme image🖼{" "}
+          Get a new meme image  🖼{" "}
         </button>
         <br/>
       <form onSubmit={createMemeImage} className="form">
@@ -77,7 +76,7 @@ function Meme(props) {
           onChange={handleChange}
         />{" "}
         <button className="save--button" >
-        Save meme image🖼{" "}
+        Save meme image  🖼{" "}
         </button>{" "}
       </form>
       

@@ -21,13 +21,13 @@ code {
     display: flex;
     align-items: center;
     height: 65px;
-    background: linear-gradient(90deg, #5b6b8b 1.18%, #2027a4 100%);
+    background: linear-gradient(90deg, #5b6b8b 1.18%, #434858 100%);
     color: white;
     padding: 20px;
 }
 
 .header--img {
-    height: 100%;
+    height: 55px;
     position: relative;
     left: 50px;
 }
@@ -42,55 +42,101 @@ code {
 
 main {
     padding: 36px;
+    background-color: rgb(227, 236, 247);
+    margin-left: 250px;
+    width: 70%;
+    box-shadow: 12px 6px 5px -5px rgba(0,0,0,0.31);
+    -webkit-box-shadow: 12px 6px 5px -5px rgba(0,0,0,0.31);
+    -moz-box-shadow: 12px 6px 5px -5px rgba(0,0,0,0.31);
 }
 
 .form {
     display: grid;
-    grid-template: 40px 40px / 1fr 1fr;
+    grid-template: 20% 20% 20% 20% 20% / 1fr 1fr 1fr 1fr 1fr;
     gap: 17px;
     margin-bottom: 17px;
 }
 
 .form--input {
     font-family: "Karla", sans-serif;
+    grid-column: 3 / 3;
     border-radius: 5px;
-    border: 1px solid #d5d4d8;
-    text-indent: 5px;
+    width: 350px;
+    border: 1px solid #898c95;
+    text-indent: 120px;
+    font-size: 20px;
 }
 
 .form--button {
+    
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    margin-left: 425px;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 380px;
     grid-column: 1 / -1;
+    border:0.16em solid rgba(0, 0, 0, 0);
+    border-radius:.5em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    font-size: 23px;
     font-family: "Karla", sans-serif;
-    font-size: 25px;
-    width: 100vw;
-    background: linear-gradient(90.41deg, #5b6b8b 1.18%, #2027a4 100%);
-    color: white;
-    border: none;
-    cursor: pointer;
+    background-color: rgb(163, 177, 184);
+    color:#343752;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    }
+    .form--button:hover{
+    border-color:#000000;
+    color: rgb(163, 177, 184);
+    background-color: #343752;
+    
+    }
+    @media all and (max-width:30em){
+    .form--button {
+    display:block;
+    margin:0.2em auto;
+    }
 }
 
 .save--button {
+   
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    margin-left: 425px;
+    height: 60px;
+    width: 380px;
     grid-column: 1 / -1;
+    border:0.16em solid rgba(0, 0, 0, 0);
+    border-radius:.5em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    font-size: 23px;
     font-family: "Karla", sans-serif;
-    font-size: 25px;
-    width: 100vw;
-    background: linear-gradient(90deg, #5b6b8b 1.18%, #2027a4 100%);
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
+    background-color: rgb(163, 177, 184);
+    color:#343752;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    }
+    .save--button:hover{
+    border-color:#000000;
+    color: rgb(163, 177, 184);
+    background-color: #343752;
+    
+    }
+    @media all and (max-width:30em){
+    .save--button {
+    display:block;
+    margin:0.2em auto;
+    }
 }
-
-
-/* .memeImg {
   
-  max-width: 60vw;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  
-} */
+
 
 .meme {
     position: relative;
@@ -113,8 +159,9 @@ main {
 
 .meme--image {
     max-width: 50%;
-    /* border-radius: 30px; */
+    margin-bottom: 20px;
     display: block;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -143,10 +190,32 @@ main {
     top: 2%;
 }
 
+.meme--list--title {
+    text-align:center;
+ 
+    text-transform:uppercase;
+    font-size:26px; letter-spacing:1px;
+    
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 16px 0;
+    grid-gap: 22px;
+  }
+  
+  .meme--list--title:after,.meme--list--title:before {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid #ccc;
+    background-color:#f8f8f8;
+  }
+   
+
+
 .meme-buttons {
     position: relative;
     margin-left: 40%;
     margin-right: auto;
+    background-color: black;
     margin-bottom: 30px;
     margin-top: 30px;
 }
@@ -164,7 +233,59 @@ main {
 }
 
 .delete-button {
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     color: white;
     border-radius: 0 0 2rem 0;
+}
+
+button {
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    margin-left: 40%;
+    height: 60px;
+    width: 380px;
+    grid-column: 1 / -1;
+    border:0.16em solid rgba(0, 0, 0, 0);
+    border-radius:.5em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    font-size: 23px;
+    font-family: "Karla", sans-serif;
+    background-color: rgb(163, 177, 184);
+    color:#343752;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    }
+    button:hover{
+    border-color:#000000;
+    color: rgb(163, 177, 184);
+    background-color: #343752;
+    
+    }
+    @media all and (max-width:30em){
+    button {
+    display:block;
+    margin:0.2em auto;
+    }
+}
+.edit--form {
+    display: grid;
+    grid-template: 20% 20% 20% 20% 20% / 1fr 1fr 1fr 1fr 1fr;
+    gap: 17px;
+    margin-bottom: 17px;
+
+}
+
+
+.edit--form--input {
+        font-family: "Karla", sans-serif;
+        grid-column: 3 / 3;
+        border-radius: 5px;
+        width: 350px;
+        border: 1px solid #898c95;
+        text-indent: 120px;
+        font-size: 20px;
+    
 }
