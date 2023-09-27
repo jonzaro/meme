@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+This was my first collaborative coding project. I worked with two other developers to develop a meme generator using react. 
+
+MVP:
+-Write backend express server
+-Write Meme image API integration
+-provide 2 customizable forms which renders the form text on the top and bottom of the meme image. 
+
+
+
+
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
