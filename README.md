@@ -1,4 +1,4 @@
-This was my first collaborative coding project. I worked with two other developers to develop a meme generator using react. 
+This was my first collaborative coding project. I worked with two other developers to create a meme generator using react. 
 
 MVP:
 -Write backend express server
